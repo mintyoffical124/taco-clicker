@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taco Clicker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Upgrades</h2>
+      <div id="upgrades">
+        <!-- Upgrades will be dynamically populated -->
+      </div>
+    </div>
+
+    <!-- Main Area -->
+    <div class="main">
+      <h1>Taco Clicker</h1>
+      <div class="stats">
+        <p>Tacos: <span id="taco-count">0</span></p>
+        <p>Tacos per second: <span id="tps">0</span></p>
+      </div>
+      <button id="taco-button">🌮</button>
+      <p>Click the taco to expand your empire!</p>
+      <div class="controls">
+        <button id="save-game">Save Game</button>
+        <button id="load-game">Load Game</button>
+        <button id="submit-score">Submit Score</button>
+        <button id="remove-score">Remove Score</button>
+      </div>
+    </div>
+
+    <!-- Leaderboard -->
+    <div class="leaderboard">
+      <h2>Leaderboard</h2>
+      <div id="leaderboard-list">
+        <!-- Leaderboard entries will be dynamically populated -->
+      </div>
+    </div>
+  </div>
+
+  <canvas id="falling-tacos"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
